@@ -34,7 +34,11 @@ from decimal import Decimal
 from datetime import datetime
 from botocore.exceptions import NoCredentialsError, ClientError
 from dotenv import load_dotenv
-from zoneinfo import ZoneInfo
+# from zoneinfo import ZoneInfo
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo
 
 load_dotenv()
 
