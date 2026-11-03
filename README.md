@@ -6,6 +6,8 @@ and upserts them into a PostgreSQL warehouse.
 
 ## Architecture
 
+<img width="827" height="554" alt="CDC on DynamoDB to Warehouse using Kinesis" src="https://github.com/user-attachments/assets/bcc16caf-d728-4160-820f-b7825c526563" />
+
 ``` text
 DynamoDB
    │
